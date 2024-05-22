@@ -6,9 +6,10 @@
     <title>MaxiGaitan</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none">
     <div class="container-fluid">
         <div class="form-check form-switch">
             <span class="en d-inline text-light">English</span>
@@ -21,39 +22,64 @@
     </div>
 </nav>
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-    <div class="offcanvas-header justify-content-md-center align-items-start">
-      <div class="flex-row">
-        <img src="img/foto carnet.jpeg" height="160px" width="160px" class="rounded-circle">
-        <h2 class="text-light fw-bold">Maxi Gaitan</h2>
+    <div class="offcanvas-header justify-content-md-center align-items-start" data-bs-theme="dark">
+      <div class="flex-row py-md-2">
+        <img src="img/foto carnet.jpeg" height="160px" width="160px" class="rounded-circle border border-4">
+        <h2 class="text-light fw-bold py-md-2">Maxi Gaitan</h2>
       </div>
       
-      <button type="button" class="btn-close d-md-none text-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close d-md-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <ul class="nav flex-column">
+        <ul class="nav flex-column align-items-center">
             
-            <li class="nav-item">
-              <a class="nav-link" href="#">Inicio</a>
+            <li class="nav-item w-100 text-center rounded-pill">
+              <a class="nav-link text-light py-2" href="#">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Mi</a>
+            <li class="nav-item w-100 text-center rounded-pill">
+              <a class="nav-link text-light py-2" href="#">Sobre Mi</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Habilidades</a>
+            <li class="nav-item w-100 text-center rounded-pill">
+              <a class="nav-link text-light py-2" href="#">Habilidades</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
+            <li class="nav-item w-100 text-center rounded-pill">
+                <a class="nav-link text-light py-2" href="#">Proyectos</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+            <li class="nav-item w-100 text-center rounded-pill">
+                <a class="nav-link text-light py-2" href="#">Contacto</a>
             </li>
             
           </ul>
     </div>
+    <div class="offcanvas-body d-flex align-items-end justify-content-center">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#"><i class="bi bi-whatsapp"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#"><i class="bi bi-envelope-at"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#"><i class="bi bi-github"></i></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-light" href="#"><i class="bi bi-linkedin"></i></a>
+        </li>
+      </ul>
+      
+      
+    </div>
   </div>
+  <main class="main">
+    <section class="inicio">
+      
+    </section>
+
+  </main>
   
 
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
