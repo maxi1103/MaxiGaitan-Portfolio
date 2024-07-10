@@ -9,23 +9,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none">
-    <div class="container-fluid">
-        <div class="form-check form-switch">
-            <span class="en d-inline text-light">English</span>
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <span class="es d-inline">Español</span>
-        </div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none position-fixed d-flex flex-row justify-content-between z-3">
+    <div class="ms-3">
       <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="navbarSupportedContent"  aria-controls="offcanvasScrolling">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
+    <div class="btn-group dropstart me-3" id="language1">
+      <button type="button" class="btn btn-sm btn-light dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a id="spain" class="dropdown-item active"  href="#" onclick="changeLanguage('es')"><img width="24" height="24" src="https://img.icons8.com/color/48/argentina-circular.png" alt="spain2-circular"/> ESPAÑOL</a></li>
+        <li><a id="england" class="dropdown-item" href="#" onclick="changeLanguage('en')"><img width="24" height="24" src="https://img.icons8.com/color/48/great-britain-circular.png" alt="great-britain-circular"/> ENGLISH</a></li>
+      </ul>
+    </div>
 </nav>
+<div class="d-none d-md-block position-fixed z-3 top-0 end-0 mt-3" id="language2">
+
+</div>
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header justify-content-md-center align-items-start" data-bs-theme="dark">
       <div class="flex-row py-md-2">
-        <img src="img/foto carnet.jpeg" height="160px" width="160px" class="rounded-circle border border-4">
-        <h2 class="text-light fw-bold py-md-2">Maxi Gaitan</h2>
+        <img src="img/logopersonal4.png" height="180px" width="180px">
       </div>
       
       <button type="button" class="btn-close d-md-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -34,19 +40,19 @@
         <ul class="nav flex-column align-items-center">
             
             <li class="nav-item w-100 text-center rounded-pill">
-              <a class="nav-link text-light py-2" href="#">Inicio</a>
+              <a class="nav-link text-light py-2" href="#inicio" data-i18n="iniciol">Inicio</a>
             </li>
             <li class="nav-item w-100 text-center rounded-pill">
-              <a class="nav-link text-light py-2" href="#">Sobre Mi</a>
+              <a class="nav-link text-light py-2" href="#aboutme" data-i18n="aboutmel">Sobre Mi</a>
             </li>
             <li class="nav-item w-100 text-center rounded-pill">
-              <a class="nav-link text-light py-2" href="#">Habilidades</a>
+              <a class="nav-link text-light py-2" href="#skills" data-i18n="skillsl">Habilidades</a>
+            </li>
+            <li class="nav-item w-100 text-center rounded-pill" >
+                <a class="nav-link text-light py-2" href="#projects" data-i18n="projectsl">Proyectos</a>
             </li>
             <li class="nav-item w-100 text-center rounded-pill">
-                <a class="nav-link text-light py-2" href="#">Proyectos</a>
-            </li>
-            <li class="nav-item w-100 text-center rounded-pill">
-                <a class="nav-link text-light py-2" href="#">Contacto</a>
+                <a class="nav-link text-light py-2" href="#contact" data-i18n="contactl">Contacto</a>
             </li>
             
           </ul>
@@ -54,32 +60,221 @@
     <div class="offcanvas-body d-flex align-items-end justify-content-center">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link text-light" href="#"><i class="bi bi-whatsapp"></i></a>
+          <a class="nav-link text-light" target="_blank" href="https://wa.me/+5493884558437"><i class="bi bi-whatsapp"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#"><i class="bi bi-envelope-at"></i></a>
+          <a class="nav-link text-light" href="mailto:nahuel_maxi11@hotmail.com"><i class="bi bi-envelope-at"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#"><i class="bi bi-github"></i></a>
+          <a class="nav-link text-light" target="_blank" href="https://github.com/maxi1103"><i class="bi bi-github"></i></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link text-light" href="#"><i class="bi bi-linkedin"></i></a>
+          <a class="nav-link text-light" target="_blank" href="https://www.linkedin.com/in/nahuel-gait%C3%A1n-0bb687189/"><i class="bi bi-linkedin"></i></a>
         </li>
       </ul>
       
       
     </div>
   </div>
-  <main class="main">
-    <section class="inicio">
+  <main class="main d-flex flex-column">
+    <section class="inicio container  d-flex flex-column justify-content-between p-md-5 mb-3" id="inicio">
+        <div>
+          <p class="text-secondary">&lt;html&gt;</p>
+          <p class="text-secondary">&nbsp;&nbsp;&nbsp;&lt;body&gt;</p>
+        </div>
+        <div>
+           <h1 class="text-light mx-4" data-i18n="inicio1">Hola &#128075!</h2>
+            <h1 class="text-light mx-4" data-i18n="inicio2">Soy Maxi Gaitán</h2>
+            <h1 class="text-light mx-4" data-i18n="inicio3">Desarrollador de Software</h2>
+            <div class="container d-flex  align-items flex-row mt-4 px-3">
+            <button type="button" class="btn btn-outline-warning mx-3" data-i18n="inicio4">Contactame!</button>
+            <button type="button" class="btn btn-outline-warning mx-3" data-i18n="inicio5">Descargar Curriculum</button>
+            </div>
+        </div>
+        <div>
+          <p class="text-secondary">&nbsp;&nbsp;&nbsp;&lt;/body&gt;</p>
+          <p class="text-secondary">&lt;/html&gt;</p>
+        </div>
+    </section>
+    <section class="aboutme container d-flex p-md-5 flex-row align-items-center my-5" id="aboutme">
+      <div class="row">
+        <div class="col-lg-7 me-md-3">
+          <h1 class="text-light" data-i18n="aboutme1">Sobre mi &#129300</h1>
+          <br>
+          <p class="text-light fs-4 text" data-i18n="aboutme2">Egresado de la carrera Analista Programador Universitario en la cual he aprendido y adaptado
+            distintas competencias blandas y tecnicas, tales como: pensamiento logico, constancia, innovacion, compromiso, 
+            paradigma de objetos, tenica de calidad de software.
+          </p>
+          <p class="text-light fs-4 text" data-i18n="aboutme3">Me considero una persona autodidacta, con una notable capacidad para adaptarme a las diversas 
+            tecnologías emergentes del mercado. Disfruto resolver problemas y superar dificultades, lo que me proporciona la 
+            motivación necesaria para enfrentar las diversas adversidades que pueden surgir en el ámbito laboral.
+          </p>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center ms-md-3 justify-content-center">
+          <img src="img/fotocarnetsf.png" alt="">
+        </div>
+      </div>
       
+    </section>
+    <section class="skills container d-flex p-md-5 flex-column flex-lg-row my-5" id="skills">
+      <div class="row">
+      <div class="col-lg-7 d-flex align-items-start flex-column col-12">
+        <h1 class="text-light" data-i18n="skills1">Mis habilidades &#129299</h1>
+        <br>
+        <p class="text-light fs-4 text" data-i18n="skills2">
+          Gracias a la orientacion de mi escuela secundario he estado involucrado con la programacion desde temprana edad, podiendo 
+          asi desarrollar unas aptitudes y hablidades que me han ayudado a lo largo de mi carrera.
+          Soy una persona versatil, ampliando constantemente mis conocimientos en las disntitas tecnologias que hay y surgen
+        </p>
+        <p class="text-light fs-4 text" data-i18n="skills3">
+          He estudiado inglés durante siete años durante mi adolescencia, lo cual me ha permitido desenvolverme con confianza y 
+          enfrentar desafíos en el mundo de la programación.
+        </p>
+      </div>
+      <div class="col-lg-5 col-12">
+        <h3 class="text-light text-center">Front-end</h3>
+        <div class="d-flex flex-row p-2 border border-light rounded justify-content-between flex-wrap">
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/html.png" alt="">
+            <h6 class="text-light">HTML5</h6>
+          </div>
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/css3.png" alt="">
+            <h6 class="text-light">CSS3</h6>
+          </div>
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/javascript.png" alt="">
+            <h6 class="text-light">JavaScript</h6>
+          </div>
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/angular.png" alt="">
+            <h6 class="text-light">Angular</h6>
+          </div>
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/bootstrap.png" alt="">
+            <h6 class="text-light">Bootstrap</h6>
+          </div>
+        </div>
+        <br>
+        <h3 class="text-light text-center">Back-end</h3>
+        <div class="d-flex flex-row p-2 border border-light rounded justify-content-between flex-wrap">
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/java.png" alt="">
+            <h6 class="text-light">Java</h6>
+          </div>
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/net.png" alt="">
+            <h6 class="text-light">.NET</h6>
+          </div>
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/node.png" alt="">
+            <h6 class="text-light">Node</h6>
+          </div>
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/mongodb.png" alt="">
+            <h6 class="text-light">MongoDB</h6>
+          </div>
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/mysql.png" alt="">
+            <h6 class="text-light">MySQL</h6>
+          </div>
+        </div>
+        <br>
+        <h3 class="text-light text-center">Extra</h3>
+        <div class="d-flex flex-row p-2 border border-light rounded justify-content-between flex-wrap">
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/github.png" alt="">
+            <h6 class="text-light">Git</h6>
+          </div>
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/docker.png" alt="">
+            <h6 class="text-light">Docker</h6>
+          </div>
+          <div class="p-md-2 d-flex flex-column align-items-center">
+            <img class="logos" src="img/postman.png" alt="">
+            <h6 class="text-light">Postman</h6>
+          </div> 
+        </div>
+
+      </div>
+    </div>
+      
+    </section>
+    <section class="projects container p-md-5 my-5" id="projects">
+      <div class="">
+        <h1 class="text-light" data-i18n="proyects1">Mis proyectos &#128188</h1>
+      </div>
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-12 col-md-6">
+            <div class="card h-100">
+              <img src="img/turnos.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Api Rest</h5>
+                <p class="card-text">Api rest desarrollado con Java Spring Boot y Maven siguiendo patrones de diseños como DTO, DI, Service Layer</p>
+              </div>
+              <div class="card-footer">
+                <a class="nav-link rounded d-inline p-1 git border border-secondary" href="#"><i class="bi bi-github"></i>Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 p-3 p-md-0">
+            <div class="card h-100">
+              <img src="img/angular-proy.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">WebApp Angular</h5>
+                <p class="card-text">WebApp software de reuiniones y eventos, desarrollado con angular, nodejs, typescript y mongodb </p>
+              </div>
+              <div class="card-footer">
+                <a class="nav-link rounded d-inline p-1 git border border-secondary" href="#"><i class="bi bi-github"></i>Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row p-3">
+          <div class="col-12 col-md-6">
+            <div class="card h-100">
+              <img src="img/turnos.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Api Rest</h5>
+                <p class="card-text">Api rest desarrollado con Java Spring Boot y Maven siguiendo patrones de diseños como DTO, DI, Service Layer</p>
+              </div>
+              <div class="card-footer">
+                <a class="nav-link rounded d-inline p-1 git border border-secondary" href="#"><i class="bi bi-github"></i>Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 p-3 p-md-0">
+            <div class="card h-100">
+              <img src="img/angular-proy.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">WebApp Angular</h5>
+                <p class="card-text">WebApp software de reuiniones y eventos, desarrollado con angular, nodejs, typescript y mongodb </p>
+              </div>
+              <div class="card-footer">
+                <a class="nav-link rounded d-inline p-1 git border border-secondary" href="#"><i class="bi bi-github"></i>Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact container p-md-5 d-flex flex-column" id="contact">
+      <h1 class="text-light" data-i18n="contact1">Contactame &#128172</h1>
+      <div class="text-light d-flex flex-column justify-content-center text-start h-100 p-md-3">
+        <p><span><i class="bi bi-whatsapp"></i></span>&nbsp; Whatsapp <a href="https://wa.me/+5493884558437" class="link-warning" target="_blank">+54 9388 455-8437</a></p>
+        <p><span><i class="bi bi-envelope-at"></i></span>&nbsp; Mail <a href="mailto:nahuel_maxi11@hotmail.com" class="link-warning" >nahuel_maxi11@hotmail.com</a></p>
+        <p><span><i class="bi bi-github"></i></span>&nbsp; Github <a href="https://github.com/maxi1103" class="link-warning" target="_blank">git/maxi1103</a></p>
+        <p><span><i class="bi bi-linkedin"></i></span>&nbsp; Linkedin <a href="https://www.linkedin.com/in/nahuel-gait%C3%A1n-0bb687189/" class="link-warning" target="_blank">in/Nahuel-Gaitan</a></p>
+      </div>
     </section>
 
   </main>
   
 
-
-    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
