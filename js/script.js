@@ -102,7 +102,11 @@ document.addEventListener("DOMContentLoaded", function() {
           'skills1': `My Skills ${emotes['emote3']}`,
           'skills2': 'Thanks to the guidance of my secondary school, I have been involved in programming from an early age, allowing me to develop skills and abilities that have supported me throughout my career. I am a versatile individual, constantly expanding my knowledge in various existing and emerging technologies.',
           'skills3': 'I studied English for seven years during my adolescence, which has enabled me to confidently navigate challenges in the programming world.',
-          'proyects1': `My Proyects ${emotes['emote4']}`,
+          'proyects1': `My Projects ${emotes['emote4']}`,
+          'proyects2': 'REST API developed with Java Spring Boot and Maven following design patterns such as DTO, DI, and Service Layer',
+          'proyects3': 'WebApp for meetings and events software, developed with Angular, Node.js, TypeScript, and MongoDB',
+          'proyects4': 'Desktop App for parking lot management, developed with .NET, C#, WPF, and SQLServer',
+          'proyects5': 'WebApp for sales management and product administration in the car business, developed with Java, Spring Boot, Spring Data, HTML, CSS, Bootstrap, and MySQL',
           'contact1': `Contact Me ${emotes['emote5']}`,
           
          
@@ -130,6 +134,10 @@ document.addEventListener("DOMContentLoaded", function() {
           'skills2': 'Egresado de la carrera Analista Programador Universitario en la cual he aprendido y adaptado distintas competencias blandas y tecnicas, tales como: pensamiento logico, constancia, innovacion, compromiso, paradigma de objetos, tenica de calidad de software.',          
           'skills3': 'Me considero una persona autodidacta, con una notable capacidad para adaptarme a las diversas tecnologías emergentes del mercado. Disfruto resolver problemas y superar dificultades, lo que me proporciona la motivación necesaria para enfrentar las diversas adversidades que pueden surgir en el ámbito laboral.',
           'proyects1': `Mis Proyectos ${emotes['emote4']}`,
+          'proyects2': 'Api rest desarrollado con Java Spring Boot y Maven siguiendo patrones de diseños como DTO, DI, Service Layer',
+          'proyects3': 'WebApp software de reuiniones y eventos, desarrollado con angular, nodejs, typescript y mongodb',
+          'proyects4': 'Desktop App, gestion de playa de estacionamiento desarrollado con .NET, C#, WPF y SQLServer',
+          'proyects5': 'WebApp sobre gestion de venta y administracion de productos sobre negocio de autos, desarrollado con eventos, desarrollado con Java, Spring-Boot, Spring-Data, HTML, CSS, Bootstrap, MySql',
           'contact1': `Contactame ${emotes['emote5']}`,
           // Agrega más texto en español según sea necesario
         }
