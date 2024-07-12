@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
           'inicio4': 'Contact me!',
           'inicio5': 'Download Curriculm',
           'aboutme1': `About Me ${emotes['emote2']}`,
-          'aboutme2': `Graduated from the University Program Analyst Programmer career, where I have acquired and developed various soft and technical skills, including: logical thinking, perseverance, innovation, commitment, object-oriented paradigm, and software quality techniques.`,
+          'aboutme2': `Graduated with a degree in 'Analyst Programmer', where I have acquired and developed various soft and technical skills, including: logical thinking, perseverance, innovation, commitment, object-oriented paradigm, and software quality techniques.`,
           'aboutme3': `I consider myself a self-taught individual with a notable ability to adapt to emerging technologies in the market. I enjoy solving problems and overcoming challenges, which provides me with the motivation to face the diverse adversities that may arise in the professional environment.`,
           'skills1': `My Skills ${emotes['emote3']}`,
           'skills2': 'Thanks to the guidance of my secondary school, I have been involved in programming from an early age, allowing me to develop skills and abilities that have supported me throughout my career. I am a versatile individual, constantly expanding my knowledge in various existing and emerging technologies.',
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
           'proyects2': 'REST API developed with Java Spring Boot and Maven following design patterns such as DTO, DI, and Service Layer',
           'proyects3': 'WebApp for meetings and events software, developed with Angular, Node.js, TypeScript, and MongoDB',
           'proyects4': 'Desktop App for parking lot management, developed with .NET, C#, WPF, and SQLServer',
-          'proyects5': 'WebApp for sales management and product administration in the car business, developed with Java, Spring Boot, Spring Data, HTML, CSS, Bootstrap, and MySQL',
+          'proyects5': 'WebApp for sales management and product administration in the car business, developed with Java, Spring Boot, Thymeleaf, Spring Data, HTML, CSS, Bootstrap, and MySQL',
           'contact1': `Contact Me ${emotes['emote5']}`,
           
          
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function() {
           'proyects2': 'Api rest desarrollado con Java Spring Boot y Maven siguiendo patrones de diseños como DTO, DI, Service Layer',
           'proyects3': 'WebApp software de reuiniones y eventos, desarrollado con angular, nodejs, typescript y mongodb',
           'proyects4': 'Desktop App, gestion de playa de estacionamiento desarrollado con .NET, C#, WPF y SQLServer',
-          'proyects5': 'WebApp sobre gestion de venta y administracion de productos sobre negocio de autos, desarrollado con eventos, desarrollado con Java, Spring-Boot, Spring-Data, HTML, CSS, Bootstrap, MySql',
+          'proyects5': 'WebApp sobre gestion de venta y administracion de productos sobre negocio de autos, desarrollado con Java, Spring-Boot, Thymeleaf, Spring-Data, HTML, CSS, Bootstrap, MySql',
           'contact1': `Contactame ${emotes['emote5']}`,
           // Agrega más texto en español según sea necesario
         }
@@ -149,15 +149,15 @@ document.addEventListener("DOMContentLoaded", function() {
           const key = element.getAttribute('data-i18n');
           element.textContent = texts[lang][key];
         });
-       /* const downloadButton = document.getElementById('downloadButton');
+       const downloadButton = document.getElementById('downloadButton');
         if (lang === 'en') {
-            downloadButton.setAttribute('onclick', "window.open('./img/CV-EN.pdf')");
+            downloadButton.setAttribute('onclick', "window.open('./documents/Curriculum-Gaitan-en.pdf')");
         } else if (lang === 'es') {
-            downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
+            downloadButton.setAttribute('onclick', "window.open('./documents/Curriculum-Gaitan-es.pdf')");
         } else {
             // Establecer un valor predeterminado para el botón en caso de que el idioma no esté definido
-            downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
-        }*/
+            downloadButton.setAttribute('onclick', "window.open('./documents/Curriculum-Gaitan-es.pdf')");
+        }
       }
     
       changeLanguage('es');
