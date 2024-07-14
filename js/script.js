@@ -23,14 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // mover o colocar el boton de lenguaje dentro o fuera del nav segun la pantalla
     const parent = document.getElementById('language1');
     const container = document.getElementById('language2');
-    const mediaQuery2 = window.matchMedia("(max-width: 768px)");
+    const nav1= document.getElementById('nav');
+    const mediaQuery2 = window.matchMedia("(min-width: 768px)");
 
     
     function handleLanguageMediaQueryChange(e) {
         if (e.matches) {
-            parent.appendChild(container);
+                container.appendChild(parent);           
         } else {
-            container.appendChild(parent);
+           nav1.appendChild(parent);
         }
     }
 
@@ -57,8 +58,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // Ejecutar la función al cargar la página
     window.onload = moveChild;
     */
-
     
+    const clickableElements = document.querySelectorAll('.link-a');
+    const nav = document.getElementById("nav");
+    clickableElements.forEach(element => {
+      element.addEventListener('click', () => {
+        const style= window.getComputedStyle(nav);
+        const display= style.getPropertyValue('display');
+        if(display != 'none'){
+            elemento.classList.remove("show");
+        }
+       
+     
+     });
+    });
 });
 //idioma
     // Obtener los elementos de idioma

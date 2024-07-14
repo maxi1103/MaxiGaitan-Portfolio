@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none position-fixed d-flex flex-row justify-content-between z-3">
+<nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none position-fixed d-flex flex-row justify-content-between z-3" id="nav">
     <div class="ms-3">
       <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="navbarSupportedContent"  aria-controls="offcanvasScrolling">
         <span class="navbar-toggler-icon"></span>
@@ -27,33 +27,32 @@
     </div>
 </nav>
 <div class="d-none d-md-block position-fixed z-3 top-0 end-0 mt-3" id="language2">
-
+  
 </div>
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-    <div class="offcanvas-header justify-content-md-center align-items-start" data-bs-theme="dark">
-      <div class="flex-row py-md-2">
+    <div class="offcanvas-header justify-content-md-center align-items-start flex-column" data-bs-theme="dark">
+      <button type="button" class="btn-close d-md-none fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div class="flex-row py-md-2 d-flex justify-content-center align-items-center w-100">
         <img src="img/logopersonal4.png" height="180px" width="180px">
-      </div>
-      
-      <button type="button" class="btn-close d-md-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div> 
     </div>
     <div class="offcanvas-body">
         <ul class="nav flex-column align-items-center">
             
-            <li class="nav-item w-100 text-center rounded-pill">
-              <a class="nav-link text-light py-2" href="#inicio" data-i18n="iniciol">Inicio</a>
+            <li class="nav-item w-100 text-center rounded-pill mb-3">
+              <a class="nav-link text-light py-2 fs-4 link-a" href="#inicio" data-i18n="iniciol">Inicio</a>
             </li>
-            <li class="nav-item w-100 text-center rounded-pill">
-              <a class="nav-link text-light py-2" href="#aboutme" data-i18n="aboutmel">Sobre Mi</a>
+            <li class="nav-item w-100 text-center rounded-pill mb-3">
+              <a class="nav-link text-light py-2 fs-4 link-a" href="#aboutme" data-i18n="aboutmel">Sobre Mi</a>
             </li>
-            <li class="nav-item w-100 text-center rounded-pill">
-              <a class="nav-link text-light py-2" href="#skills" data-i18n="skillsl">Habilidades</a>
+            <li class="nav-item w-100 text-center rounded-pill mb-3">
+              <a class="nav-link text-light py-2 fs-4 link-a" href="#skills" data-i18n="skillsl">Habilidades</a>
             </li>
-            <li class="nav-item w-100 text-center rounded-pill" >
-                <a class="nav-link text-light py-2" href="#projects" data-i18n="projectsl">Proyectos</a>
+            <li class="nav-item w-100 text-center rounded-pill mb-3" >
+              <a class="nav-link text-light py-2 fs-4 link-a" href="#projects" data-i18n="projectsl">Proyectos</a>
             </li>
-            <li class="nav-item w-100 text-center rounded-pill">
-                <a class="nav-link text-light py-2" href="#contact" data-i18n="contactl">Contacto</a>
+            <li class="nav-item w-100 text-center rounded-pill mb-3">
+              <a class="nav-link text-light py-2 fs-4 link-a" href="#contact" data-i18n="contactl">Contacto</a>
             </li>
             
           </ul>
@@ -61,16 +60,16 @@
     <div class="offcanvas-body d-flex align-items-end justify-content-center">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link text-light" target="_blank" href="https://wa.me/+5493884558437"><i class="bi bi-whatsapp"></i></a>
+          <a class="nav-link text-light fs-4" target="_blank" href="https://wa.me/+5493884558437"><i class="bi bi-whatsapp"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="mailto:nahuel_maxi11@hotmail.com"><i class="bi bi-envelope-at"></i></a>
+          <a class="nav-link text-light fs-4" href="mailto:nahuel_maxi11@hotmail.com"><i class="bi bi-envelope-at"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" target="_blank" href="https://github.com/maxi1103"><i class="bi bi-github"></i></a>
+          <a class="nav-link text-light fs-4" target="_blank" href="https://github.com/maxi1103"><i class="bi bi-github"></i></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link text-light" target="_blank" href="https://www.linkedin.com/in/nahuel-gait%C3%A1n-0bb687189/"><i class="bi bi-linkedin"></i></a>
+          <a class="nav-link text-light fs-4" target="_blank" href="https://www.linkedin.com/in/nahuel-gait%C3%A1n-0bb687189/"><i class="bi bi-linkedin"></i></a>
         </li>
       </ul>
       
@@ -112,7 +111,7 @@
           </p>
         </div>
         <div class="col-lg-4 d-flex align-items-center ms-md-3 justify-content-center">
-          <img src="img/fotocarnetsf.png" alt="">
+          <img src="img/fotocarnetsf.png" alt="" class="img1">
         </div>
       </div>
       
