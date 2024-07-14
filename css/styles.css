@@ -43,7 +43,6 @@ body{
 }
 
 .main{
-    margin-top: 60px;
     margin-left: 249px;
 }
 
@@ -70,6 +69,11 @@ h1 {
 }
 .img1{
     filter: drop-shadow(1px 1px 20px rgb(28, 181, 237))
+}
+@media screen and (max-width: 767px){
+    .main{
+    margin-left: 0px;
+    }
 }
 @media screen and (max-width: 767px){
     .main{
