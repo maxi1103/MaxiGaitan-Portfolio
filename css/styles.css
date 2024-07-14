@@ -64,6 +64,9 @@ h1 {
 .inicio{
     height: calc(100vh - 56px);
 }
+.inicio,.aboutme,.skills,.projects,.contact{
+    scroll-margin-top: 60px;
+}
 .contact{
     height: 500px;
 }
