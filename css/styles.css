@@ -77,6 +77,9 @@ h1 {
     .main{
     margin-left: 0px;
     }
+    .text{
+        font-size: 1rem !important;
+    }
 }
 @media screen and (max-width: 767px){
     .main{
@@ -95,9 +98,6 @@ h1 {
     }
     .offcanvas{
         width: 250px !important;
-    }
-    .text{
-        font-size: 1rem !important;
     }
     
 }

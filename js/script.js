@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
           'proyects2': 'REST API developed with Java Spring Boot and Maven following design patterns such as DTO, DI, and Service Layer',
           'proyects3': 'WebApp for meetings and events software, developed with Angular, Node.js, TypeScript, and MongoDB',
           'proyects4': 'Desktop App for parking lot management, developed with .NET, C#, WPF, and SQLServer',
-          'proyects5': 'WebApp for sales management and product administration in the car business, developed with Java, Spring Boot, Thymeleaf, Spring Data, HTML, CSS, Bootstrap, and MySQL',
+          'proyects5': 'WebApp for sales management and product administration in the car business, developed with Java, Spring Boot, MVC, Thymeleaf, Spring Data, HTML, CSS, Bootstrap, and MySQL',
           'contact1': `Contact Me ${emotes['emote5']}`,
           
          
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
           'proyects2': 'Api rest desarrollado con Java Spring Boot y Maven siguiendo patrones de diseños como DTO, DI, Service Layer',
           'proyects3': 'WebApp software de reuiniones y eventos, desarrollado con angular, nodejs, typescript y mongodb',
           'proyects4': 'Desktop App, gestion de playa de estacionamiento desarrollado con .NET, C#, WPF y SQLServer',
-          'proyects5': 'WebApp sobre gestion de venta y administracion de productos sobre negocio de autos, desarrollado con Java, Spring-Boot, Thymeleaf, Spring-Data, HTML, CSS, Bootstrap, MySql',
+          'proyects5': 'WebApp sobre gestion de venta y administracion de productos sobre negocio de autos, desarrollado con Java, Spring-Boot, MVC, Thymeleaf, Spring-Data, HTML, CSS, Bootstrap, MySql',
           'contact1': `Contactame ${emotes['emote5']}`,
           // Agrega más texto en español según sea necesario
         }
