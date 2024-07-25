@@ -99,6 +99,9 @@ h1 {
     .offcanvas{
         width: 250px !important;
     }
+    .inicio,.aboutme,.skills,.projects,.contact{
+        scroll-margin-top: 0px;
+    }
     
 }
 

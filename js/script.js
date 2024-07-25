@@ -144,8 +144,8 @@ document.addEventListener("DOMContentLoaded", function() {
             tecnologías emergentes del mercado. Disfruto resolver problemas y superar dificultades, lo que me proporciona la 
             motivación necesaria para enfrentar las diversas adversidades que pueden surgir en el ámbito laboral.`,
           'skills1': `Mis Habilidades ${emotes['emote3']}`,
-          'skills2': 'Egresado de la carrera Analista Programador Universitario en la cual he aprendido y adaptado distintas competencias blandas y tecnicas, tales como: pensamiento logico, constancia, innovacion, compromiso, paradigma de objetos, tenica de calidad de software.',          
-          'skills3': 'Me considero una persona autodidacta, con una notable capacidad para adaptarme a las diversas tecnologías emergentes del mercado. Disfruto resolver problemas y superar dificultades, lo que me proporciona la motivación necesaria para enfrentar las diversas adversidades que pueden surgir en el ámbito laboral.',
+          'skills2': 'Gracias a la orientacion de mi escuela secundario he estado involucrado con la programacion desde temprana edad, podiendo asi desarrollar unas aptitudes y hablidades que me han ayudado a lo largo de mi carrera. Soy una persona versatil, ampliando constantemente mis conocimientos en las disntitas tecnologias que hay y surgen',          
+          'skills3': 'He estudiado inglés durante siete años durante mi adolescencia, lo cual me ha permitido desenvolverme con confianza y enfrentar desafíos en el mundo de la programación.',
           'proyects1': `Mis Proyectos ${emotes['emote4']}`,
           'proyects2': 'Api rest desarrollado con Java Spring Boot y Maven siguiendo patrones de diseños como DTO, DI, Service Layer',
           'proyects3': 'WebApp software de reuiniones y eventos, desarrollado con angular, nodejs, typescript y mongodb',
